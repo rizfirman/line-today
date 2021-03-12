@@ -1,0 +1,42 @@
+.nav-bar {
+    .main-nav {
+        .nav-item, span, h2, h3{
+          font-family: $libre-baskerville;
+          font-size: 19px;
+      }
+      .nav-item::after{
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: black;
+          transition: width .3s;
+  
+      }
+      .nav-item:hover::after{
+            width: 100%;
+            transition: width .3s;
+      }
+      .menu-area{
+        position: static;
+      }
+      .mega-area {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px;
+      }
+      .dropdown-item {
+        padding: 5px;
+        padding-left: 200px;
+        font-size: 20px;
+        font-family: $libre-baskerville;
+          &:hover {
+            @include hover(darken(black, 10%), white);
+          }
+      }
+        }
+    
+     
+  }
